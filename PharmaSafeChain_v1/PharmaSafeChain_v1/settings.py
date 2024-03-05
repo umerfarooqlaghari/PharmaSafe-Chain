@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ioc(j5ek^)vh&asdn,na-1*-kas&8#rf^h_9-7n!4h=r15!mg)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -61,7 +61,7 @@ ROOT_URLCONF = 'PharmaSafeChain_v1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
